@@ -1,0 +1,21 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - cd CICD
+      - chmod +x aws-config.sh install-terraform.sh
+  
+  pre_build:
+    commands:
+      - ./aws-config.sh
+      - ./install-terraform.sh
+  
+  build:
+    commands:
+      - cd ..
+      - cd main
+      - terraform init
+      - terraform validate
+      - terraform apply -auto-approve 
+      # - terraform destroy -auto-approve 
+
