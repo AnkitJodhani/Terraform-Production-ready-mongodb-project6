@@ -2,6 +2,9 @@
 
 Welcome to the MongoDB sharded cluster provisioning repository! Here, you'll find all the necessary resources and instructions to set up a highly available and scalable MongoDB sharded cluster on the AWS cloud.
 
+## 🏠 Architecture
+![Architecture of the application](architecture.gif)
+
 ## 🚀 Why Use a Sharded Cluster?
 A sharded cluster is designed to handle large datasets and high workloads by distributing data across multiple machines. This architecture offers horizontal scalability, making it an ideal choice for applications that require seamless scaling as user demand grows. With automatic data distribution and failover mechanisms, a sharded cluster ensures both data availability and reliability.
 
